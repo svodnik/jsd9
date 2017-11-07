@@ -63,6 +63,22 @@ git config --global user.email "YOUR EMAIL ADDRESS"</code></pre>
 
                 <li><p><strong>Install Node</strong>
                 Refer to the package installer on Node’s <a href="https://nodejs.org/en/">website</a>. Select the Current version (labeled "Latest Features"). Then just follow the set-up instructions.</p>
+
+                <li><p><strong>Configure Node</strong></p></li>
+                <p>Copy and paste the following command into the Git Bash utility:</p>
+
+                <pre><code>npm get prefix</code></pre>
+
+                <p>Select the path value that's returned from this command, then copy it to the Clipboard (ctrl + C) to use below.</p>
+                <p>Next, copy and paste the following command:</p>
+
+                <pre><code>notepad ~/.bashrc</code></pre>
+
+                <p>The Notepad application opens, displaying a blank document.</p>
+                
+                <p>Within this document, type <code>export PATH="</code>, then paste the path you copied above in Git Bash, then type <code>/bin:$PATH"</code></p>
+
+                <p>Save your changes, then close Notepad.</p>
                 
                 <p>When you’re done, raise your hand and ask a member of the instructional team to verify that the installation was successful.
                 Then complete the instructions in the section <em>2. Setting up GitHub</em> below.</p></li>
